@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TV HD</string>
+    <string name="tab_channels">Canales</string>
+    <string name="tab_events">Eventos</string>
+    <string name="tab_search">Buscar</string>
+</resources>

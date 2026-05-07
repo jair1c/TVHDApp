@@ -1,0 +1,3 @@
+-keep class com.tvhd.app.data.model.** { *; }
+-keepattributes Signature
+-keepattributes *Annotation*

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.TVHD" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/accent</item>
+        <item name="colorPrimaryVariant">@color/surface</item>
+        <item name="colorOnPrimary">#000000</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/text</item>
+        <item name="android:windowBackground">@color/bg</item>
+        <item name="android:statusBarColor">@color/surface</item>
+        <item name="android:navigationBarColor">@color/surface</item>
+        <!-- Chip style -->
+        <item name="chipStyle">@style/Widget.TVHD.Chip</item>
+    </style>
+
+    <style name="Theme.TVHD.Player" parent="Theme.TVHD">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:statusBarColor">#00000000</item>
+    </style>
+
+    <style name="Widget.TVHD.Chip" parent="Widget.MaterialComponents.Chip.Action">
+        <item name="chipBackgroundColor">@color/surface</item>
+        <item name="chipStrokeColor">@color/border</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="android:textColor">@color/text_dim</item>
+        <item name="checkedIconVisible">false</item>
+        <item name="chipIconVisible">false</item>
+    </style>
+</resources>

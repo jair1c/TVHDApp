@@ -1,0 +1,1058 @@
+{
+  "scraped_at": "2026-05-05T23:09:21.933357",
+  "source": "https://tvtvhd.com",
+  "stats": {
+    "total_channels": 27,
+    "total_events": 28,
+    "live_events": 0
+  },
+  "channels": [
+    {
+      "name": "ESPN 2",
+      "stream_id": "espn2",
+      "stream_url": "https://tvtvhd.com/canales.php?stream=espn2",
+      "category": "deportes",
+      "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/200px-ESPN_wordmark.svg.png",
+      "logo_local": ""
+    },
+    {
+      "name": "ESPN 2 MX",
+      "stream_id": "espn2mx",
+      "stream_url": "https://tvtvhd.com/canales.php?stream=espn2mx",
+      "category": "deportes",
+      "logo_url": "",
+      "logo_local": ""
+    },
+    {
+      "name": "ESPN 3 MX",
+      "stream_id": "espn3mx",
+      "stream_url": "https://tvtvhd.com/canales.php?stream=espn3mx",
+      "category": "deportes",
+      "logo_url": "",
+      "logo_local": ""
+    },
+    {
+      "name": "ESPN 3",
+      "stream_id": "espn3",
+      "stream_url": "https://tvtvhd.com/canales.php?stream=espn3",
+      "category": "deportes",
+      "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/200px-ESPN_wordmark.svg.png",
+      "logo_local": ""
+    },
+    {
+      "name": "ESPN NL",
+      "stream_id": "espn1_nl",
+      "stream_url": "https://tvtvhd.com/canales.php?stream=espn1_nl",
+      "category": "deportes",
+      "logo_url": "",
+      "logo_local": ""
+    },
+    {
+      "name": "Disney+",
+      "stream_id": "disney1pl",
+      "stream_url": "https://tvtvhd.com/canales.php?stream=disney1pl",
+      "category": "deportes",
+      "logo_url": "",
+      "logo_local": ""
+    },
+    {
+      "name": "ESPN",
+      "stream_id": "espn",
+      "stream_url": "https://tvtvhd.com/canales.php?stream=espn",
+      "category": "deportes",
+      "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/200px-ESPN_wordmark.svg.png",
+      "logo_local": ""
+    },
+    {
+      "name": "Disney+",
+      "stream_id": "disney1",
+      "stream_url": "https://tvtvhd.com/canales.php?stream=disney1",
+      "category": "entretenimiento",
+      "logo_url": "",
+      "logo_local": ""
+    },
+    {
+      "name": "Fox Sports",
+      "stream_id": "foxsports\n",
+      "stream_url": "https://tvtvhd.com/canales.php?stream=foxsports\n",
+      "category": "deportes",
+      "logo_url": "",
+      "logo_local": ""
+    },
+    {
+      "name": "TUDN USA",
+      "stream_id": "tudn",
+      "stream_url": "https://tvtvhd.com/canales.php?stream=tudn",
+      "category": "deportes",
+      "logo_url": "",
+      "logo_local": ""
+    },
+    {
+      "name": "Univision USA",
+      "stream_id": "univision",
+      "stream_url": "https://tvtvhd.com/canales.php?stream=univision",
+      "category": "deportes",
+      "logo_url": "",
+      "logo_local": ""
+    },
+    {
+      "name": "Dsports 2",
+      "stream_id": "dsports2",
+      "stream_url": "https://tvtvhd.com/canales.php?stream=dsports2",
+      "category": "deportes",
+      "logo_url": "",
+      "logo_local": ""
+    },
+    {
+      "name": "DSports +",
+      "stream_id": "dsportsplus",
+      "stream_url": "https://tvtvhd.com/canales.php?stream=dsportsplus",
+      "category": "deportes",
+      "logo_url": "",
+      "logo_local": ""
+    },
+    {
+      "name": "Disney+",
+      "stream_id": "disney2",
+      "stream_url": "https://tvtvhd.com/canales.php?stream=disney2",
+      "category": "entretenimiento",
+      "logo_url": "",
+      "logo_local": ""
+    },
+    {
+      "name": "BeIN Sports Ñ",
+      "stream_id": "beinsportes",
+      "stream_url": "https://tvtvhd.com/canales.php?stream=beinsportes",
+      "category": "deportes",
+      "logo_url": "",
+      "logo_local": ""
+    },
+    {
+      "name": "TNT Sports",
+      "stream_id": "tntsports",
+      "stream_url": "https://tvtvhd.com/canales.php?stream=tntsports",
+      "category": "deportes",
+      "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/TNT_Sports_logo.svg/200px-TNT_Sports_logo.svg.png",
+      "logo_local": ""
+    },
+    {
+      "name": "ESPN 5",
+      "stream_id": "espn5",
+      "stream_url": "https://tvtvhd.com/canales.php?stream=espn5",
+      "category": "deportes",
+      "logo_url": "",
+      "logo_local": ""
+    },
+    {
+      "name": "Fox Sports 3",
+      "stream_id": "foxsports3",
+      "stream_url": "https://tvtvhd.com/canales.php?stream=foxsports3",
+      "category": "deportes",
+      "logo_url": "",
+      "logo_local": ""
+    },
+    {
+      "name": "BeIN Sports EXTRA Español",
+      "stream_id": "beinsport_xtra_espanol",
+      "stream_url": "https://tvtvhd.com/canales.php?stream=beinsport_xtra_espanol",
+      "category": "deportes",
+      "logo_url": "",
+      "logo_local": ""
+    },
+    {
+      "name": "ESPN 4",
+      "stream_id": "espn4",
+      "stream_url": "https://tvtvhd.com/canales.php?stream=espn4",
+      "category": "deportes",
+      "logo_url": "",
+      "logo_local": ""
+    },
+    {
+      "name": "Fox Sports 2",
+      "stream_id": "foxsports2",
+      "stream_url": "https://tvtvhd.com/canales.php?stream=foxsports2",
+      "category": "deportes",
+      "logo_url": "",
+      "logo_local": ""
+    },
+    {
+      "name": "ESPN 7",
+      "stream_id": "espn7",
+      "stream_url": "https://tvtvhd.com/canales.php?stream=espn7",
+      "category": "deportes",
+      "logo_url": "",
+      "logo_local": ""
+    },
+    {
+      "name": "ESPN 3 NL",
+      "stream_id": "espn3_nl",
+      "stream_url": "https://tvtvhd.com/canales.php?stream=espn3_nl",
+      "category": "deportes",
+      "logo_url": "",
+      "logo_local": ""
+    },
+    {
+      "name": "Unimas",
+      "stream_id": "unimas",
+      "stream_url": "https://tvtvhd.com/canales.php?stream=unimas",
+      "category": "deportes",
+      "logo_url": "",
+      "logo_local": ""
+    },
+    {
+      "name": "FOX Sports 1 USA",
+      "stream_id": "foxsports1_usa",
+      "stream_url": "https://tvtvhd.com/canales.php?stream=foxsports1_usa",
+      "category": "deportes",
+      "logo_url": "",
+      "logo_local": ""
+    },
+    {
+      "name": "DSports",
+      "stream_id": "dsports",
+      "stream_url": "https://tvtvhd.com/canales.php?stream=dsports",
+      "category": "deportes",
+      "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/DSports_logo.svg/200px-DSports_logo.svg.png",
+      "logo_local": ""
+    },
+    {
+      "name": "FOX Deportes",
+      "stream_id": "foxdeportes",
+      "stream_url": "https://tvtvhd.com/canales.php?stream=foxdeportes",
+      "category": "deportes",
+      "logo_url": "",
+      "logo_local": ""
+    }
+  ],
+  "events": [
+    {
+      "time": "08:00",
+      "time_dt": "08:00:00",
+      "competition": "Tenis – Internazionali BNL d’Italia – Primera Ronda",
+      "match": "Jan-Lennard Struff vs Francisco Comesaña",
+      "flag_url": "https://cdn.ftvhd.com/uploads/Tenis_a5d5fcd1d1_594ebf0186.png",
+      "live": false,
+      "channels": [
+        {
+          "name": "ESPN 2",
+          "stream_id": "espn2",
+          "stream_url": "https://tvtvhd.com/canales.php?stream=espn2"
+        },
+        {
+          "name": "ESPN 2 | OP2",
+          "stream_id": "espn2",
+          "stream_url": "https://tvtvhd.com/vivo/canal.php?stream=espn2"
+        },
+        {
+          "name": "ESPN 2 | OP3",
+          "stream_id": "espn2",
+          "stream_url": "https://tvtvhd.com/vivo/canales.php?stream=espn2"
+        },
+        {
+          "name": "ESPN 2 MX",
+          "stream_id": "espn2mx",
+          "stream_url": "https://tvtvhd.com/canales.php?stream=espn2mx"
+        }
+      ],
+      "home_logo_local": "",
+      "away_logo_local": ""
+    },
+    {
+      "time": "08:30",
+      "time_dt": "08:30:00",
+      "competition": "",
+      "match": "Ciclismo – La Vuelta Femenina – Etapa #4",
+      "flag_url": "https://cdn.ftvhd.com/uploads/Pngtree_logo_bike_cycling_mtb_isolated_5209109_fbde4a6148_0df2a2f68b.png",
+      "live": false,
+      "channels": [
+        {
+          "name": "ESPN 3 MX",
+          "stream_id": "espn3mx",
+          "stream_url": "https://tvtvhd.com/canales.php?stream=espn3mx"
+        }
+      ]
+    },
+    {
+      "time": "09:25",
+      "time_dt": "09:25:00",
+      "competition": "Tenis – Internazionali BNL d’Italia – Primera Ronda",
+      "match": "Pablo Carreno-Busta vs Alejandro Tabilo",
+      "flag_url": "https://cdn.ftvhd.com/uploads/Tenis_a5d5fcd1d1_594ebf0186.png",
+      "live": false,
+      "channels": [
+        {
+          "name": "ESPN 2",
+          "stream_id": "espn2",
+          "stream_url": "https://tvtvhd.com/canales.php?stream=espn2"
+        },
+        {
+          "name": "ESPN 2 | OP2",
+          "stream_id": "espn2",
+          "stream_url": "https://tvtvhd.com/vivo/canal.php?stream=espn2"
+        },
+        {
+          "name": "ESPN 2 | OP3",
+          "stream_id": "espn2",
+          "stream_url": "https://tvtvhd.com/vivo/canales.php?stream=espn2"
+        }
+      ],
+      "home_logo_local": "",
+      "away_logo_local": ""
+    },
+    {
+      "time": "10:10",
+      "time_dt": "10:10:00",
+      "competition": "Tenis – Internazionali BNL d’Italia – Primera Ronda",
+      "match": "Jacob Fearnley vs Giovanni Mpetshi Perricard",
+      "flag_url": "https://cdn.ftvhd.com/uploads/Tenis_a5d5fcd1d1_594ebf0186.png",
+      "live": false,
+      "channels": [
+        {
+          "name": "ESPN 2",
+          "stream_id": "espn2",
+          "stream_url": "https://tvtvhd.com/canales.php?stream=espn2"
+        },
+        {
+          "name": "ESPN 2 | OP2",
+          "stream_id": "espn2",
+          "stream_url": "https://tvtvhd.com/vivo/canal.php?stream=espn2"
+        },
+        {
+          "name": "ESPN 2 | OP3",
+          "stream_id": "espn2",
+          "stream_url": "https://tvtvhd.com/vivo/canales.php?stream=espn2"
+        }
+      ],
+      "home_logo_local": "",
+      "away_logo_local": ""
+    },
+    {
+      "time": "11:30",
+      "time_dt": "11:30:00",
+      "competition": "Torneo de Reserva",
+      "match": "Vélez Sársfield  vs Sarmiento",
+      "flag_url": "https://cdn.ftvhd.com/uploads/argentina_2bd748026e_628913fc18.png",
+      "live": false,
+      "channels": [
+        {
+          "name": "ESPN 3",
+          "stream_id": "espn3",
+          "stream_url": "https://tvtvhd.com/canales.php?stream=espn3"
+        },
+        {
+          "name": "ESPN 3 | OP2",
+          "stream_id": "espn3",
+          "stream_url": "https://tvtvhd.com/vivo/canal.php?stream=espn3"
+        },
+        {
+          "name": "ESPN 3 | OP3",
+          "stream_id": "espn3",
+          "stream_url": "https://tvtvhd.com/vivo/canales.php?stream=espn3"
+        }
+      ],
+      "home_logo_local": "",
+      "away_logo_local": ""
+    },
+    {
+      "time": "11:45",
+      "time_dt": "11:45:00",
+      "competition": "Eerste Divisie",
+      "match": "Almere City vs De Graafschap",
+      "flag_url": "https://cdn.ftvhd.com/uploads/paises_bajos_f773e994b9_3bb0d207d2.png",
+      "live": false,
+      "channels": [
+        {
+          "name": "ESPN NL",
+          "stream_id": "espn1_nl",
+          "stream_url": "https://tvtvhd.com/canales.php?stream=espn1_nl"
+        },
+        {
+          "name": "ESPN NL | OP2",
+          "stream_id": "espn1_nl",
+          "stream_url": "https://tvtvhd.com/vivo/canal.php?stream=espn1_nl"
+        },
+        {
+          "name": "ESPN NL | OP3",
+          "stream_id": "espn1_nl",
+          "stream_url": "https://tvtvhd.com/vivo/canales.php?stream=espn1_nl"
+        }
+      ],
+      "home_logo_local": "",
+      "away_logo_local": ""
+    },
+    {
+      "time": "13:30",
+      "time_dt": "13:30:00",
+      "competition": "Tenis – Internazionali BNL d’Italia – Primera Ronda",
+      "match": "Federico Cina vs Alexander Blockx",
+      "flag_url": "https://cdn.ftvhd.com/uploads/Tenis_a5d5fcd1d1_594ebf0186.png",
+      "live": false,
+      "channels": [
+        {
+          "name": "ESPN 2",
+          "stream_id": "espn2",
+          "stream_url": "https://tvtvhd.com/canales.php?stream=espn2"
+        },
+        {
+          "name": "ESPN 2 | OP2",
+          "stream_id": "espn2",
+          "stream_url": "https://tvtvhd.com/vivo/canal.php?stream=espn2"
+        },
+        {
+          "name": "ESPN 2 | OP3",
+          "stream_id": "espn2",
+          "stream_url": "https://tvtvhd.com/vivo/canales.php?stream=espn2"
+        }
+      ],
+      "home_logo_local": "",
+      "away_logo_local": ""
+    },
+    {
+      "time": "13:45",
+      "time_dt": "13:45:00",
+      "competition": "Women's Super League",
+      "match": "Brighton & Hove Albion vs Arsenal",
+      "flag_url": "https://cdn.ftvhd.com/uploads/inglaterra_823176495f_fc4f47c43e.png",
+      "live": false,
+      "channels": [
+        {
+          "name": "Disney+",
+          "stream_id": "disney1pl",
+          "stream_url": "https://tvtvhd.com/canales.php?stream=disney1pl"
+        }
+      ],
+      "home_logo_local": "",
+      "away_logo_local": ""
+    },
+    {
+      "time": "14:00",
+      "time_dt": "14:00:00",
+      "competition": "UEFA Champions League",
+      "match": "Bayern München vs PSG",
+      "flag_url": "https://cdn.ftvhd.com/uploads/UEFA_Champions_L_e95eab40e4_9fff1e273b.png",
+      "live": false,
+      "channels": [
+        {
+          "name": "ESPN",
+          "stream_id": "espn",
+          "stream_url": "https://tvtvhd.com/canales.php?stream=espn"
+        },
+        {
+          "name": "ESPN AR┃OP2",
+          "stream_id": "espn",
+          "stream_url": "https://tvtvhd.com/vivo/canal.php?stream=espn"
+        },
+        {
+          "name": "ESPN AR┃OP3",
+          "stream_id": "espn",
+          "stream_url": "https://tvtvhd.com/vivo/canales.php?stream=espn"
+        },
+        {
+          "name": "Disney+",
+          "stream_id": "disney1",
+          "stream_url": "https://tvtvhd.com/canales.php?stream=disney1"
+        },
+        {
+          "name": "Fox Sports",
+          "stream_id": "foxsports\n",
+          "stream_url": "https://tvtvhd.com/canales.php?stream=foxsports\n"
+        },
+        {
+          "name": "TUDN USA",
+          "stream_id": "tudn",
+          "stream_url": "https://tvtvhd.com/canales.php?stream=tudn"
+        },
+        {
+          "name": "TUDN USA | OP2",
+          "stream_id": "tudn",
+          "stream_url": "https://tvtvhd.com/vivo/canal.php?stream=tudn"
+        },
+        {
+          "name": "TUDN USA | OP3",
+          "stream_id": "tudn",
+          "stream_url": "https://tvtvhd.com/vivo/canales.php?stream=tudn"
+        },
+        {
+          "name": "Univision USA",
+          "stream_id": "univision",
+          "stream_url": "https://tvtvhd.com/canales.php?stream=univision"
+        }
+      ],
+      "home_logo_local": "",
+      "away_logo_local": ""
+    },
+    {
+      "time": "15:00",
+      "time_dt": "15:00:00",
+      "competition": "Sudamericano Sub-17 Femenino",
+      "match": "Argentina  vs Venezuela",
+      "flag_url": "https://cdn.ftvhd.com/uploads/conmebol_d03512952a_0a585d86af.png",
+      "live": false,
+      "channels": [
+        {
+          "name": "Dsports 2",
+          "stream_id": "dsports2",
+          "stream_url": "https://tvtvhd.com/canales.php?stream=dsports2"
+        },
+        {
+          "name": "Dsports 2 | OP2",
+          "stream_id": "dsports2",
+          "stream_url": "https://tvtvhd.com/canales.php?stream=dsports2"
+        },
+        {
+          "name": "Dsports 2 | OP3",
+          "stream_id": "dsports2",
+          "stream_url": "https://tvtvhd.com/canales.php?stream=dsports2"
+        }
+      ],
+      "home_logo_local": "",
+      "away_logo_local": ""
+    },
+    {
+      "time": "15:00",
+      "time_dt": "15:00:00",
+      "competition": "Sudamericano Sub-17 Femenino",
+      "match": "Brasil  vs Chile",
+      "flag_url": "https://cdn.ftvhd.com/uploads/conmebol_d03512952a_0a585d86af.png",
+      "live": false,
+      "channels": [
+        {
+          "name": "DSports +",
+          "stream_id": "dsportsplus",
+          "stream_url": "https://tvtvhd.com/canales.php?stream=dsportsplus"
+        },
+        {
+          "name": "DSports + I OP2",
+          "stream_id": "dsportsplus",
+          "stream_url": "https://tvtvhd.com/canales.php?stream=dsportsplus"
+        }
+      ],
+      "home_logo_local": "",
+      "away_logo_local": ""
+    },
+    {
+      "time": "17:00",
+      "time_dt": "17:00:00",
+      "competition": "Copa Sudamericana",
+      "match": "Audax Italiano vs Vasco da Gama",
+      "flag_url": "https://cdn.ftvhd.com/uploads/image_modified_f8ce531f01_b000a25a9e.png",
+      "live": false,
+      "channels": [
+        {
+          "name": "DSports +",
+          "stream_id": "dsportsplus",
+          "stream_url": "https://tvtvhd.com/canales.php?stream=dsportsplus"
+        },
+        {
+          "name": "DSports + I OP2",
+          "stream_id": "dsportsplus",
+          "stream_url": "https://tvtvhd.com/canales.php?stream=dsportsplus"
+        }
+      ],
+      "home_logo_local": "",
+      "away_logo_local": ""
+    },
+    {
+      "time": "17:00",
+      "time_dt": "17:00:00",
+      "competition": "Copa Sudamericana",
+      "match": "Torque vs Palestino",
+      "flag_url": "https://cdn.ftvhd.com/uploads/image_modified_f8ce531f01_b000a25a9e.png",
+      "live": false,
+      "channels": [
+        {
+          "name": "ESPN 2",
+          "stream_id": "espn2",
+          "stream_url": "https://tvtvhd.com/canales.php?stream=espn2"
+        },
+        {
+          "name": "ESPN 2 | OP2",
+          "stream_id": "espn2",
+          "stream_url": "https://tvtvhd.com/vivo/canal.php?stream=espn2"
+        },
+        {
+          "name": "ESPN 2 | OP3",
+          "stream_id": "espn2",
+          "stream_url": "https://tvtvhd.com/vivo/canales.php?stream=espn2"
+        },
+        {
+          "name": "Disney+",
+          "stream_id": "disney2",
+          "stream_url": "https://tvtvhd.com/canales.php?stream=disney2"
+        }
+      ],
+      "home_logo_local": "",
+      "away_logo_local": ""
+    },
+    {
+      "time": "17:00",
+      "time_dt": "17:00:00",
+      "competition": "Copa Libertadores",
+      "match": "Cusco vs Estudiantes",
+      "flag_url": "https://cdn.ftvhd.com/uploads/copa_libertadores_f60faf808a_6fb4deda1f.png",
+      "live": false,
+      "channels": [
+        {
+          "name": "ESPN",
+          "stream_id": "espn",
+          "stream_url": "https://tvtvhd.com/canales.php?stream=espn"
+        },
+        {
+          "name": "ESPN AR┃OP2",
+          "stream_id": "espn",
+          "stream_url": "https://tvtvhd.com/vivo/canal.php?stream=espn"
+        },
+        {
+          "name": "ESPN AR┃OP3",
+          "stream_id": "espn",
+          "stream_url": "https://tvtvhd.com/vivo/canales.php?stream=espn"
+        },
+        {
+          "name": "Fox Sports",
+          "stream_id": "foxsports\n",
+          "stream_url": "https://tvtvhd.com/canales.php?stream=foxsports\n"
+        },
+        {
+          "name": "ESPN 2 MX",
+          "stream_id": "espn2mx",
+          "stream_url": "https://tvtvhd.com/canales.php?stream=espn2mx"
+        },
+        {
+          "name": "BeIN Sports Ñ",
+          "stream_id": "beinsportes",
+          "stream_url": "https://tvtvhd.com/vivo/canal.php?stream=beinsportes"
+        }
+      ],
+      "home_logo_local": "",
+      "away_logo_local": ""
+    },
+    {
+      "time": "17:00",
+      "time_dt": "17:00:00",
+      "competition": "Torneo de Reserva",
+      "match": "Talleres de Córdoba  vs Atlético Tucumán",
+      "flag_url": "https://cdn.ftvhd.com/uploads/argentina_2bd748026e_628913fc18.png",
+      "live": false,
+      "channels": [
+        {
+          "name": "TNT Sports",
+          "stream_id": "tntsports",
+          "stream_url": "https://tvtvhd.com/canales.php?stream=tntsports"
+        },
+        {
+          "name": "TNT Sports | OP2",
+          "stream_id": "tntsports",
+          "stream_url": "https://tvtvhd.com/canales.php?stream=tntsports"
+        },
+        {
+          "name": "TNT Sports | OP3",
+          "stream_id": "tntsports",
+          "stream_url": "https://tvtvhd.com/canales.php?stream=tntsports"
+        }
+      ],
+      "home_logo_local": "",
+      "away_logo_local": ""
+    },
+    {
+      "time": "17:00",
+      "time_dt": "17:00:00",
+      "competition": "Copa Libertadores",
+      "match": "Deportivo La Guaira vs Bolívar",
+      "flag_url": "https://cdn.ftvhd.com/uploads/copa_libertadores_f60faf808a_6fb4deda1f.png",
+      "live": false,
+      "channels": [
+        {
+          "name": "ESPN 5",
+          "stream_id": "espn5",
+          "stream_url": "https://tvtvhd.com/canales.php?stream=espn5"
+        },
+        {
+          "name": "ESPN 5 | OP2",
+          "stream_id": "espn5",
+          "stream_url": "https://tvtvhd.com/vivo/canal.php?stream=espn5"
+        },
+        {
+          "name": "ESPN 5 | OP3",
+          "stream_id": "espn5",
+          "stream_url": "https://tvtvhd.com/vivo/canales.php?stream=espn5"
+        },
+        {
+          "name": "Fox Sports 3",
+          "stream_id": "foxsports3",
+          "stream_url": "https://tvtvhd.com/canales.php?stream=foxsports3"
+        },
+        {
+          "name": "BeIN Sports EXTRA Español",
+          "stream_id": "beinsport_xtra_espanol",
+          "stream_url": "https://tvtvhd.com/canales.php?stream=beinsport_xtra_espanol"
+        }
+      ],
+      "home_logo_local": "",
+      "away_logo_local": ""
+    },
+    {
+      "time": "18:00",
+      "time_dt": "18:00:00",
+      "competition": "NBA",
+      "match": "Semifinales de Conferencia – Juego #2 – New York Knicks vs Philadelphia 76ers",
+      "flag_url": "https://cdn.ftvhd.com/uploads/nba_b6210b97b6_06c9c65d5f.png",
+      "live": false,
+      "channels": [
+        {
+          "name": "ESPN 4",
+          "stream_id": "espn4",
+          "stream_url": "https://tvtvhd.com/canales.php?stream=espn4"
+        },
+        {
+          "name": "ESPN 4 | OP2",
+          "stream_id": "espn4",
+          "stream_url": "https://tvtvhd.com/vivo/canal.php?stream=espn4"
+        },
+        {
+          "name": "ESPN 4 | OP3",
+          "stream_id": "espn4",
+          "stream_url": "https://tvtvhd.com/vivo/canales.php?stream=espn4"
+        }
+      ],
+      "home_logo_local": "",
+      "away_logo_local": ""
+    },
+    {
+      "time": "19:00",
+      "time_dt": "19:00:00",
+      "competition": "Copa Sudamericana",
+      "match": "Barracas Central vs Olimpia",
+      "flag_url": "https://cdn.ftvhd.com/uploads/image_modified_f8ce531f01_b000a25a9e.png",
+      "live": false,
+      "channels": [
+        {
+          "name": "ESPN 5",
+          "stream_id": "espn5",
+          "stream_url": "https://tvtvhd.com/canales.php?stream=espn5"
+        },
+        {
+          "name": "ESPN 5 | OP2",
+          "stream_id": "espn5",
+          "stream_url": "https://tvtvhd.com/vivo/canal.php?stream=espn5"
+        },
+        {
+          "name": "ESPN 5 | OP3",
+          "stream_id": "espn5",
+          "stream_url": "https://tvtvhd.com/vivo/canales.php?stream=espn5"
+        }
+      ],
+      "home_logo_local": "",
+      "away_logo_local": ""
+    },
+    {
+      "time": "19:00",
+      "time_dt": "19:00:00",
+      "competition": "Copa Sudamericana",
+      "match": "Macará vs Tigre",
+      "flag_url": "https://cdn.ftvhd.com/uploads/image_modified_f8ce531f01_b000a25a9e.png",
+      "live": false,
+      "channels": [
+        {
+          "name": "Disney+",
+          "stream_id": "espn",
+          "stream_url": "https://tvtvhd.com/canales.php?stream=espn"
+        }
+      ],
+      "home_logo_local": "",
+      "away_logo_local": ""
+    },
+    {
+      "time": "19:30",
+      "time_dt": "19:30:00",
+      "competition": "Copa Sudamericana",
+      "match": "Botafogo vs Racing Club",
+      "flag_url": "https://cdn.ftvhd.com/uploads/image_modified_f8ce531f01_b000a25a9e.png",
+      "live": false,
+      "channels": [
+        {
+          "name": "ESPN 3",
+          "stream_id": "espn3",
+          "stream_url": "https://tvtvhd.com/canales.php?stream=espn3"
+        },
+        {
+          "name": "ESPN 3 | OP2",
+          "stream_id": "espn3",
+          "stream_url": "https://tvtvhd.com/vivo/canal.php?stream=espn3"
+        },
+        {
+          "name": "ESPN 3 | OP3",
+          "stream_id": "espn3",
+          "stream_url": "https://tvtvhd.com/vivo/canales.php?stream=espn3"
+        }
+      ],
+      "home_logo_local": "",
+      "away_logo_local": ""
+    },
+    {
+      "time": "19:30",
+      "time_dt": "19:30:00",
+      "competition": "Copa Libertadores",
+      "match": "Santa Fe vs Corinthians",
+      "flag_url": "https://cdn.ftvhd.com/uploads/copa_libertadores_f60faf808a_6fb4deda1f.png",
+      "live": false,
+      "channels": [
+        {
+          "name": "ESPN",
+          "stream_id": "espn",
+          "stream_url": "https://tvtvhd.com/canales.php?stream=espn"
+        },
+        {
+          "name": "ESPN AR┃OP2",
+          "stream_id": "espn",
+          "stream_url": "https://tvtvhd.com/vivo/canal.php?stream=espn"
+        },
+        {
+          "name": "ESPN AR┃OP3",
+          "stream_id": "espn",
+          "stream_url": "https://tvtvhd.com/vivo/canales.php?stream=espn"
+        },
+        {
+          "name": "Fox Sports 2",
+          "stream_id": "foxsports2",
+          "stream_url": "https://tvtvhd.com/canales.php?stream=foxsports2"
+        },
+        {
+          "name": "ESPN 2 MX",
+          "stream_id": "espn2mx",
+          "stream_url": "https://tvtvhd.com/canales.php?stream=espn2mx"
+        },
+        {
+          "name": "ESPN NL",
+          "stream_id": "espn1_nl",
+          "stream_url": "https://tvtvhd.com/canales.php?stream=espn1_nl"
+        },
+        {
+          "name": "ESPN NL | OP2",
+          "stream_id": "espn1_nl",
+          "stream_url": "https://tvtvhd.com/vivo/canal.php?stream=espn1_nl"
+        },
+        {
+          "name": "ESPN NL | OP3",
+          "stream_id": "espn1_nl",
+          "stream_url": "https://tvtvhd.com/vivo/canales.php?stream=espn1_nl"
+        }
+      ],
+      "home_logo_local": "",
+      "away_logo_local": ""
+    },
+    {
+      "time": "19:30",
+      "time_dt": "19:30:00",
+      "competition": "Copa Libertadores",
+      "match": "Independiente Rivadavia vs Fluminense",
+      "flag_url": "https://cdn.ftvhd.com/uploads/copa_libertadores_f60faf808a_6fb4deda1f.png",
+      "live": false,
+      "channels": [
+        {
+          "name": "ESPN 7",
+          "stream_id": "espn7",
+          "stream_url": "https://tvtvhd.com/canales.php?stream=espn7"
+        },
+        {
+          "name": "ESPN 7 | OP2",
+          "stream_id": "espn7",
+          "stream_url": "https://tvtvhd.com/vivo/canal.php?stream=espn7"
+        },
+        {
+          "name": "ESPN 7 | OP3",
+          "stream_id": "espn7",
+          "stream_url": "https://tvtvhd.com/vivo/canales.php?stream=espn7"
+        },
+        {
+          "name": "Fox Sports",
+          "stream_id": "foxsports\n",
+          "stream_url": "https://tvtvhd.com/canales.php?stream=foxsports\n"
+        }
+      ],
+      "home_logo_local": "",
+      "away_logo_local": ""
+    },
+    {
+      "time": "20:30",
+      "time_dt": "20:30:00",
+      "competition": "NBA",
+      "match": "Semifinales de Conferencia – Juego #2 – San Antonio Spurs vs Minnesota Timberwolves",
+      "flag_url": "https://cdn.ftvhd.com/uploads/nba_b6210b97b6_06c9c65d5f.png",
+      "live": false,
+      "channels": [
+        {
+          "name": "ESPN 4",
+          "stream_id": "espn4",
+          "stream_url": "https://tvtvhd.com/canales.php?stream=espn4"
+        },
+        {
+          "name": "ESPN 4 | OP2",
+          "stream_id": "espn4",
+          "stream_url": "https://tvtvhd.com/vivo/canal.php?stream=espn4"
+        },
+        {
+          "name": "ESPN 4 | OP3",
+          "stream_id": "espn4",
+          "stream_url": "https://tvtvhd.com/vivo/canales.php?stream=espn4"
+        }
+      ],
+      "home_logo_local": "",
+      "away_logo_local": ""
+    },
+    {
+      "time": "20:30",
+      "time_dt": "20:30:00",
+      "competition": "Copa de Campeones de la Concacaf",
+      "match": "Toluca vs Los Angeles FC",
+      "flag_url": "https://cdn.ftvhd.com/uploads/concacaf_liga_campeones_fad6673376_904ea61955.png",
+      "live": false,
+      "channels": [
+        {
+          "name": "ESPN 3 NL",
+          "stream_id": "espn3_nl",
+          "stream_url": "https://tvtvhd.com/canales.php?stream=espn3_nl"
+        },
+        {
+          "name": "TUDN USA",
+          "stream_id": "tudn",
+          "stream_url": "https://tvtvhd.com/canales.php?stream=tudn"
+        },
+        {
+          "name": "TUDN USA | OP2",
+          "stream_id": "tudn",
+          "stream_url": "https://tvtvhd.com/vivo/canal.php?stream=tudn"
+        },
+        {
+          "name": "TUDN USA | OP3",
+          "stream_id": "tudn",
+          "stream_url": "https://tvtvhd.com/vivo/canales.php?stream=tudn"
+        },
+        {
+          "name": "Unimas",
+          "stream_id": "unimas",
+          "stream_url": "https://tvtvhd.com/canales.php?stream=unimas"
+        },
+        {
+          "name": "Univision USA",
+          "stream_id": "univision",
+          "stream_url": "https://tvtvhd.com/canales.php?stream=univision"
+        },
+        {
+          "name": "FOX Sports 1 USA",
+          "stream_id": "foxsports1_usa",
+          "stream_url": "https://tvtvhd.com/tv/canal.php?stream=foxsports1_usa"
+        }
+      ],
+      "home_logo_local": "",
+      "away_logo_local": ""
+    },
+    {
+      "time": "21:00",
+      "time_dt": "21:00:00",
+      "competition": "Copa Sudamericana",
+      "match": "Alianza Atlético vs América de Cali",
+      "flag_url": "https://cdn.ftvhd.com/uploads/image_modified_f8ce531f01_b000a25a9e.png",
+      "live": false,
+      "channels": [
+        {
+          "name": "DSports",
+          "stream_id": "dsports",
+          "stream_url": "https://tvtvhd.com/canales.php?stream=dsports"
+        }
+      ],
+      "home_logo_local": "",
+      "away_logo_local": ""
+    },
+    {
+      "time": "21:00",
+      "time_dt": "21:00:00",
+      "competition": "Copa Libertadores",
+      "match": "Deportes Tolima vs Nacional",
+      "flag_url": "https://cdn.ftvhd.com/uploads/copa_libertadores_f60faf808a_6fb4deda1f.png",
+      "live": false,
+      "channels": [
+        {
+          "name": "ESPN 2",
+          "stream_id": "espn2",
+          "stream_url": "https://tvtvhd.com/canales.php?stream=espn2"
+        },
+        {
+          "name": "ESPN 2 | OP2",
+          "stream_id": "espn2",
+          "stream_url": "https://tvtvhd.com/vivo/canal.php?stream=espn2"
+        },
+        {
+          "name": "ESPN 2 | OP3",
+          "stream_id": "espn2",
+          "stream_url": "https://tvtvhd.com/vivo/canales.php?stream=espn2"
+        }
+      ],
+      "home_logo_local": "",
+      "away_logo_local": ""
+    },
+    {
+      "time": "21:00",
+      "time_dt": "21:00:00",
+      "competition": "Copa Libertadores",
+      "match": "Universidad Católica vs Cruzeiro",
+      "flag_url": "https://cdn.ftvhd.com/uploads/copa_libertadores_f60faf808a_6fb4deda1f.png",
+      "live": false,
+      "channels": [
+        {
+          "name": "ESPN 5",
+          "stream_id": "espn5",
+          "stream_url": "https://tvtvhd.com/canales.php?stream=espn5"
+        },
+        {
+          "name": "ESPN 5 | OP2",
+          "stream_id": "espn5",
+          "stream_url": "https://tvtvhd.com/vivo/canal.php?stream=espn5"
+        },
+        {
+          "name": "ESPN 5 | OP3",
+          "stream_id": "espn5",
+          "stream_url": "https://tvtvhd.com/vivo/canales.php?stream=espn5"
+        },
+        {
+          "name": "Fox Sports 3",
+          "stream_id": "foxsports3",
+          "stream_url": "https://tvtvhd.com/canales.php?stream=foxsports3"
+        },
+        {
+          "name": "BeIN Sports EXTRA Español",
+          "stream_id": "beinsport_xtra_espanol",
+          "stream_url": "https://tvtvhd.com/canales.php?stream=beinsport_xtra_espanol"
+        }
+      ],
+      "home_logo_local": "",
+      "away_logo_local": ""
+    },
+    {
+      "time": "21:15",
+      "time_dt": "21:15:00",
+      "competition": "Liga Nacional",
+      "match": "Olimpia vs Marathón",
+      "flag_url": "https://cdn.ftvhd.com/uploads/honduras_754919ea25_d66393ecc3.png",
+      "live": false,
+      "channels": [
+        {
+          "name": "FOX Deportes",
+          "stream_id": "foxdeportes",
+          "stream_url": "https://tvtvhd.com/vivo/canal.php?stream=foxdeportes"
+        },
+        {
+          "name": "FOX Deportes | OP2",
+          "stream_id": "foxdeportes",
+          "stream_url": "https://tvtvhd.com/vivo/canal.php?stream=foxdeportes"
+        },
+        {
+          "name": "FOX Deportes | OP3",
+          "stream_id": "foxdeportes",
+          "stream_url": "https://tvtvhd.com/vivo/canales.php?stream=foxdeportes"
+        }
+      ],
+      "home_logo_local": "",
+      "away_logo_local": ""
+    }
+  ]
+}
