@@ -50,7 +50,6 @@
                 android:layout_height="36dp"
                 android:src="@drawable/ic_grid"
                 android:background="@drawable/bg_toggle_btn"
-                android:selected="true"
                 android:contentDescription="Vista mosaico"
                 android:scaleType="center"
                 android:padding="8dp" />
@@ -61,7 +60,6 @@
                 android:layout_height="36dp"
                 android:src="@drawable/ic_list"
                 android:background="@drawable/bg_toggle_btn"
-                android:selected="false"
                 android:contentDescription="Vista lista"
                 android:scaleType="center"
                 android:padding="8dp" />
