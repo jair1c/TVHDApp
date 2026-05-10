@@ -4,43 +4,12 @@ import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.lifecycleScope
-import androidx.lifecycle.viewModelScope
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.tvhd.app.data.model.Event
-import com.tvhd.app.data.repository.TvhdRepository
 import com.tvhd.app.databinding.FragmentEventsBinding
 import com.tvhd.app.ui.player.PlayerActivity
-import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.launch
 
-// ── VIEWMODEL ────────────────────────────────────────────────────────────────
-class EventsViewModel(app: android.app.Application) : AndroidViewModel(app) {
-
-    private val repo = TvhdRepository(app)
-    val events    = MutableStateFlow<List<Event>>(emptyList())
-    val isLoading = MutableStateFlow(false)
-
-    fun load() {
-        viewModelScope.launch {
-            isLoading.value = true
-            events.value = repo.getEvents()
-            isLoading.value = false
-        }
-    }
-
-    fun refresh() {
-        viewModelScope.launch {
-            isLoading.value = true
-            repo.refresh()
-            events.value = repo.getEvents()
-            isLoading.value = false
-        }
-    }
-}
-
-// ── FRAGMENT ─────────────────────────────────────────────────────────────────
 class EventsFragment : Fragment() {
 
     private var _binding: FragmentEventsBinding? = null
@@ -61,8 +30,8 @@ class EventsFragment : Fragment() {
         adapter = EventsAdapter { event, channel ->
             PlayerActivity.start(
                 requireContext(),
-                title  = "${event.homeTeam} vs ${event.awayTeam}",
-                url    = channel.streamUrl,
+                title = "${event.homeTeam} vs ${event.awayTeam}",
+                url   = channel.streamUrl,
             )
         }
 
@@ -84,6 +53,15 @@ class EventsFragment : Fragment() {
         viewLifecycleOwner.lifecycleScope.launch {
             viewModel.isLoading.collect { loading ->
                 binding.swipeRefresh.isRefreshing = loading
+            }
+        }
+
+        viewLifecycleOwner.lifecycleScope.launch {
+            viewModel.error.collect { err ->
+                if (err != null) {
+                    binding.textEmpty.text = "Error: $err"
+                    binding.textEmpty.visibility = View.VISIBLE
+                }
             }
         }
 
