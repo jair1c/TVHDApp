@@ -4,13 +4,13 @@
     android:layout_height="match_parent"
     android:background="#000">
 
-    <!-- WebView principal -->
+    <!-- WebView ocupa TODO, desde arriba hasta abajo -->
     <WebView
         android:id="@+id/web_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-    <!-- Contenedor para fullscreen video -->
+    <!-- Contenedor fullscreen video -->
     <FrameLayout
         android:id="@+id/fullscreen_container"
         android:layout_width="match_parent"
@@ -25,14 +25,16 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center" />
 
-    <!-- Controles superpuestos -->
+    <!-- Cabecera: se auto-oculta, aparece al tocar -->
     <LinearLayout
+        android:id="@+id/header_controls"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:padding="12dp"
         android:gravity="center_vertical"
-        android:background="@drawable/bg_gradient_top">
+        android:background="@drawable/bg_gradient_top"
+        android:visibility="visible">
 
         <ImageButton
             android:id="@+id/btn_close"
@@ -48,7 +50,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:layout_marginHorizontal="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
             android:textColor="#fff"
             android:textSize="15sp"
             android:textStyle="bold"
@@ -64,6 +67,7 @@
             android:background="@drawable/bg_icon_btn"
             android:contentDescription="Recargar"
             android:padding="8dp" />
+
     </LinearLayout>
 
 </FrameLayout>

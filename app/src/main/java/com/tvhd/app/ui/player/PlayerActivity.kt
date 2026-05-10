@@ -4,6 +4,9 @@ import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
+import android.view.MotionEvent
 import android.view.View
 import android.view.WindowManager
 import android.webkit.*
@@ -13,10 +16,15 @@ import com.tvhd.app.databinding.ActivityPlayerBinding
 class PlayerActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityPlayerBinding
+    private val handler = Handler(Looper.getMainLooper())
+
+    // Oculta la cabecera después de 3 segundos de inactividad
+    private val hideHeaderRunnable = Runnable { hideHeader() }
 
     companion object {
-        private const val EXTRA_TITLE = "title"
-        private const val EXTRA_URL   = "url"
+        private const val EXTRA_TITLE  = "title"
+        private const val EXTRA_URL    = "url"
+        private const val HEADER_TIMEOUT = 3000L   // ms
 
         fun start(context: Context, title: String, url: String) {
             context.startActivity(Intent(context, PlayerActivity::class.java).apply {
@@ -26,7 +34,7 @@ class PlayerActivity : AppCompatActivity() {
         }
     }
 
-    @SuppressLint("SetJavaScriptEnabled")
+    @SuppressLint("SetJavaScriptEnabled", "ClickableViewAccessibility")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityPlayerBinding.inflate(layoutInflater)
@@ -43,12 +51,61 @@ class PlayerActivity : AppCompatActivity() {
         val title = intent.getStringExtra(EXTRA_TITLE) ?: ""
         val url   = intent.getStringExtra(EXTRA_URL)   ?: ""
 
-        binding.textTitle.text = title
+        binding.textTitle.text  = title
         binding.btnClose.setOnClickListener  { finish() }
-        binding.btnReload.setOnClickListener { binding.webView.reload() }
+        binding.btnReload.setOnClickListener {
+            binding.progressBar.visibility = View.VISIBLE
+            binding.webView.reload()
+            scheduleHideHeader()
+        }
+
+        // Toque en el WebView → mostrar/ocultar cabecera
+        binding.webView.setOnTouchListener { _, event ->
+            if (event.action == MotionEvent.ACTION_UP) {
+                toggleHeader()
+            }
+            false   // no consumir el evento: el WebView sigue recibiendo clicks
+        }
 
         setupWebView(url)
+
+        // Ocultar cabecera tras 3s al arrancar
+        scheduleHideHeader()
     }
+
+    // ── Cabecera auto-ocultar ─────────────────────────────────────────────────
+
+    private fun showHeader() {
+        binding.headerControls.apply {
+            visibility = View.VISIBLE
+            animate().alpha(1f).setDuration(200).start()
+        }
+        scheduleHideHeader()
+    }
+
+    private fun hideHeader() {
+        binding.headerControls.animate()
+            .alpha(0f)
+            .setDuration(400)
+            .withEndAction { binding.headerControls.visibility = View.GONE }
+            .start()
+    }
+
+    private fun toggleHeader() {
+        if (binding.headerControls.visibility == View.VISIBLE) {
+            handler.removeCallbacks(hideHeaderRunnable)
+            hideHeader()
+        } else {
+            showHeader()
+        }
+    }
+
+    private fun scheduleHideHeader() {
+        handler.removeCallbacks(hideHeaderRunnable)
+        handler.postDelayed(hideHeaderRunnable, HEADER_TIMEOUT)
+    }
+
+    // ── WebView ───────────────────────────────────────────────────────────────
 
     @SuppressLint("SetJavaScriptEnabled")
     private fun setupWebView(url: String) {
@@ -57,7 +114,7 @@ class PlayerActivity : AppCompatActivity() {
                 javaScriptEnabled                = true
                 domStorageEnabled                = true
                 allowFileAccess                  = true
-                mediaPlaybackRequiresUserGesture = false   // permite autoplay
+                mediaPlaybackRequiresUserGesture = false
                 mixedContentMode                 = WebSettings.MIXED_CONTENT_ALWAYS_ALLOW
                 useWideViewPort                  = true
                 loadWithOverviewMode             = true
@@ -80,18 +137,16 @@ class PlayerActivity : AppCompatActivity() {
                 override fun shouldOverrideUrlLoading(
                     view: WebView?, request: WebResourceRequest?
                 ): Boolean {
-                    val reqUrl = request?.url?.toString() ?: return false
-                    if (AD_HOSTS.any { reqUrl.contains(it) }) return true
-                    return false
+                    val u = request?.url?.toString() ?: return false
+                    return AD_HOSTS.any { u.contains(it) }
                 }
 
                 override fun shouldInterceptRequest(
                     view: WebView?, request: WebResourceRequest?
                 ): WebResourceResponse? {
-                    val reqUrl = request?.url?.toString() ?: return null
-                    if (AD_HOSTS.any { reqUrl.contains(it) }) {
+                    val u = request?.url?.toString() ?: return null
+                    if (AD_HOSTS.any { u.contains(it) })
                         return WebResourceResponse("text/plain", "utf-8", null)
-                    }
                     return null
                 }
 
@@ -99,7 +154,11 @@ class PlayerActivity : AppCompatActivity() {
                     super.onPageFinished(view, url)
                     binding.progressBar.visibility = View.GONE
                     injectStyles(view)
-                    triggerAutoplay(view)
+                    // Autoplay: intento inmediato + reintentos diferidos
+                    triggerAutoplay(view, delayMs = 0)
+                    triggerAutoplay(view, delayMs = 1500)
+                    triggerAutoplay(view, delayMs = 3500)
+                    triggerAutoplay(view, delayMs = 6000)
                 }
             }
 
@@ -121,15 +180,24 @@ class PlayerActivity : AppCompatActivity() {
     }
 
     /**
-     * Inyecta CSS para ocultar anuncios y elementos de UI no deseados.
+     * Inyecta CSS para ocultar anuncios/overlays del sitio.
+     * También oculta el elemento "thumbnail/poster" del player para que no
+     * tape el video una vez que arranca — eso era lo que causaba el efecto
+     * de "vuelve a aparecer el botón play" al cargar la imagen del canal.
      */
     private fun injectStyles(view: WebView?) {
         val css = """
-            .ad,.ads,.advertisement,.banner,.popup,.overlay,
+            .ad,.ads,.advertisement,.banner,
             [class*='ad-'],[class*='ads-'],[id*='ad-'],[id*='ads-'],
             .notification-bar,.cookie-notice,.gdpr-banner,
             [class*='popup'],[class*='modal']:not(.player-modal){
                 display:none!important;visibility:hidden!important;
+            }
+            .jw-preview,.jw-poster,
+            .vjs-poster,.vjs-thumbnail,
+            video::poster,
+            [class*='poster'],[class*='thumbnail'][class*='player']{
+                display:none!important;
             }
         """.trimIndent().replace("\n", "")
 
@@ -143,53 +211,56 @@ class PlayerActivity : AppCompatActivity() {
     }
 
     /**
-     * Autoplay: hace click en el primer botón play que encuentre en el DOM.
-     * Cubre JWPlayer, VideoJS, HTML5 <video>, y botones genéricos.
+     * Autoplay: dispara play() en todos los players conocidos.
+     * delayMs permite reintentar cuando el player JS tarda en inicializarse.
      */
-    private fun triggerAutoplay(view: WebView?) {
+    private fun triggerAutoplay(view: WebView?, delayMs: Long) {
         val js = """
             (function(){
-                // 1. HTML5 video directo
-                var videos = document.querySelectorAll('video');
-                for(var i=0;i<videos.length;i++){
-                    try{ videos[i].play(); }catch(e){}
-                }
+                // 1. HTML5 <video>
+                document.querySelectorAll('video').forEach(function(v){
+                    v.muted=false;
+                    try{ v.play(); }catch(e){}
+                });
 
                 // 2. JWPlayer
-                if(typeof jwplayer === 'function'){
-                    try{ jwplayer().play(); }catch(e){}
-                }
+                try{ if(typeof jwplayer==='function') jwplayer().play(true); }catch(e){}
 
                 // 3. VideoJS
-                if(typeof videojs !== 'undefined'){
-                    try{
-                        var players = videojs.getAllPlayers();
-                        for(var j=0;j<players.length;j++) players[j].play();
-                    }catch(e){}
-                }
+                try{
+                    if(typeof videojs!=='undefined'){
+                        videojs.getAllPlayers().forEach(function(p){ p.play(); });
+                    }
+                }catch(e){}
 
-                // 4. Click en botón play visible (fallback genérico)
-                var selectors = [
-                    '.jw-icon-playback',
+                // 4. Flowplayer
+                try{ if(typeof flowplayer!=='function') flowplayer().play(); }catch(e){}
+
+                // 5. Click en botón play visible (fallback)
+                var sel=[
+                    '.jw-icon-playback[aria-label="Play"]',
                     '.vjs-play-button',
                     '.play-button',
-                    '[class*="play"]',
                     'button[title*="play" i]',
-                    'button[aria-label*="play" i]'
+                    'button[aria-label*="play" i]',
+                    '[class*="play-btn"]',
+                    '[id*="play-btn"]'
                 ];
-                for(var s=0;s<selectors.length;s++){
-                    var el = document.querySelector(selectors[s]);
-                    if(el && el.offsetParent !== null){
-                        try{ el.click(); break; }catch(e){}
+                for(var i=0;i<sel.length;i++){
+                    var el=document.querySelector(sel[i]);
+                    if(el&&el.offsetParent!==null){
+                        try{ el.click(); }catch(e){}
+                        break;
                     }
                 }
             })();
         """.trimIndent()
 
-        // Disparar inmediatamente y también con 2s de delay (por si el player tarda en init)
-        view?.evaluateJavascript(js, null)
-        view?.postDelayed({ view.evaluateJavascript(js, null) }, 2000)
-        view?.postDelayed({ view.evaluateJavascript(js, null) }, 4000)
+        if (delayMs == 0L) {
+            view?.evaluateJavascript(js, null)
+        } else {
+            handler.postDelayed({ view?.evaluateJavascript(js, null) }, delayMs)
+        }
     }
 
     override fun onBackPressed() {
@@ -202,6 +273,7 @@ class PlayerActivity : AppCompatActivity() {
     }
 
     override fun onDestroy() {
+        handler.removeCallbacksAndMessages(null)
         binding.webView.destroy()
         super.onDestroy()
     }
